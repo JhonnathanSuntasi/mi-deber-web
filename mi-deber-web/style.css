@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+}
+
+header {
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+/* Secciones */
+.seccion {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Botón */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2e7d32;
+    transform: scale(1.1);
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
